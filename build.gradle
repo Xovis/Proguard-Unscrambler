@@ -1,0 +1,30 @@
+plugins {
+    id 'java'
+    id 'org.jetbrains.intellij' version '0.3.9'
+}
+
+group 'com.xovis'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'net.sf.proguard', name: 'proguard-retrace', version: '6.0.3'
+}
+
+task wrapper(type: Wrapper){
+    gradleVersion = '4.10.2'
+}
+
+intellij {
+    version '2018.2'
+}
+patchPluginXml {
+    changeNotes """
+      Initial Version"""
+}
+

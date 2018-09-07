@@ -1,0 +1,27 @@
+<idea-plugin>
+    <id>com.xovis</id>
+    <name>Proguard-Unscrambler</name>
+    <version>1.0.0</version>
+    <vendor email="info@xovis.com" url="http://www.xovis.com">Xovis AG</vendor>
+
+    <description><![CDATA[
+    <h4>Proguard-Unscrambler Plugin</h4>
+    <p>The Proguard-Unscrambler Plugin is a plugin to analyse an obfuscated/scrambled stacktrace.</p>
+    <h6>How to use:</h6>
+    <p>You copy the stacktrace in the dialog box, select the unscrambler you want to use and specify the location of log file.</br>
+    Click OK, and then you get the analysed stacktrace in the console.</p>
+    ]]></description>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <!-- uncomment to enable plugin in all products
+    <depends>com.intellij.modules.lang</depends>
+    -->
+    <idea-version since-build="162"/>
+    <depends>com.intellij.modules.lang</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <unscrambleSupport implementation="com.xovis.proguard_unscrambler.AnalyzeAction"/>
+    </extensions>
+
+</idea-plugin>
