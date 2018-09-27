@@ -1,4 +1,6 @@
 # Proguard-Unscrambler Plugin
+![Travis Status image ](https://travis-ci.org/Xovis/Proguard-Unscrambler.svg?branch=master)
+
 The Proguard-Unscrambler Plugin is a plugin to analyse an obfuscated/scrambled stacktrace.
 
 ## How to use
