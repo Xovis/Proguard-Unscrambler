@@ -16,7 +16,7 @@ dependencies {
     compile group: 'net.sf.proguard', name: 'proguard-retrace', version: '6.0.3'
 }
 
-task wrapper(type: Wrapper){
+wrapper{
     gradleVersion = '4.10.2'
 }
 
