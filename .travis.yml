@@ -4,4 +4,4 @@ jdk:
 - oraclejdk8
 
 install: gradle assemble
-build: ./gradlew check
+build: gradle check
